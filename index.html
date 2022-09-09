@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- show current time -->
+      <p id="currentDay" class="lead"></p> 
+    </header>
+    <div class="container" style = "margin-bottom:200px" >
+      <!-- Timeblocks go here -->
+      <!-- Create 9 blocks. Each block corresponds to each hour between 9 and 17. -->
+      <!-- default class is "future". It is adjusted based on current time. -->
+      <div id = "9" class="future" style = "margin-bottom:5px" > 9am
+        <input type="text"  id = "9Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(9)" />
+      </div>
+      <div id = "10" class="future" style = "margin-bottom:5px">10am
+        <input type="text"  id = "10Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(10)" />
+      </div>
+      <div id = "11" class="future" style = "margin-bottom:5px">11am
+        <input type="text"  id = "11Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(11)" />
+      </div>
+      <div id = "12" class="future" style = "margin-bottom:5px">12pm
+        <input type="text"  id = "12Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(12)" />
+      </div>
+      <div id = "13" class="future" style = "margin-bottom:5px">1pm
+        <input type="text"  id = "13Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(13)" />
+      </div>
+      <div id = "14" class="future" style = "margin-bottom:5px">2pm
+        <input type="text"  id = "14Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(14)" />
+      </div>
+      <div id = "15" class="future" style = "margin-bottom:5px">3pm
+        <input type="text"  id = "15Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(15)" />
+      </div>
+      <div id = "16" class="future" style = "margin-bottom:5px">4pm
+        <input type="text"  id = "16Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(16)" />
+      </div>
+      <div id = "17" class="future" style = "margin-bottom:5px">5pm
+        <input type="text"  id = "17Btn" class = "future" style="border:none; width:75%">
+        <input type='button' class = "saveBtn" value = 'Save' onclick = "save(17)" />
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
